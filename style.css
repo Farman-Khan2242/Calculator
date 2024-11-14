@@ -1,0 +1,76 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html, body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    padding: 0px 5px;
+    font-family: sans-serif;
+}
+
+.container {
+    height: auto;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.displayDiv {
+    width: 100%;
+    padding: 0px 1px;
+}
+input {
+    width: 100%;
+    height: 170px;
+    border: none;
+    background-color: rgba(225, 229, 241, 0.5);
+    border-radius: 10px;
+    font-size: 45px;
+    text-align: right;            /* Align text to the right */
+    padding-top: 100px;           /* Adjust padding to move text towards the bottom */
+    box-sizing: border-box; 
+}
+input:focus {
+    outline: none;
+}
+.buttonsDiv {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    width: auto;
+    place-items: center;
+    row-gap: 5px;
+    padding-bottom: 5px;
+    
+}
+.buttons {
+    height: 65px;
+    width: 65px;
+    background-color: rgba(225, 229, 241,0.3);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 30px;
+    border: none;
+}
+.buttons:active {
+    background-color: rgba(225, 229, 241,0.6);
+}
+.dark {
+    background-color: rgba(219, 226, 247, 0.9);
+}
+.lightOrange {
+    background-color: rgba(255, 165, 0,0.6)
+}
+.lightOrange:active {
+    background-color: rgba(255, 165, 0,0.9)
+}
