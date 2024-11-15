@@ -1,14 +1,22 @@
-let inputDisplay = document.getElementById('input')
+let inputDisplay = document.getElementById('input');
+let h5 = document.querySelector('h5');
+let clearFunction = document.querySelector('.lightOrange')
 
 function display(input){
     inputDisplay.value += input
 }
+
 function calculate(){
 
         if(inputDisplay.value == '7+5-9'){
-            inputDisplay.style.fontSize = '21px'
-        inputDisplay.value = 'Your eyes stole all my words away, $' 
-    }
+            inputDisplay.style.fontSize = '20px';
+            inputDisplay.style.color = 'red'
+            inputDisplay.value = `${h5.innerHTML}❤️`;
+                clearFunction.addEventListener('click',function(){
+                    inputDisplay.style.color = 'black'
+                    inputDisplay.style.fontSize = '45px';
+            })
+        }
 
     else {
         try {
